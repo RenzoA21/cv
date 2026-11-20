@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Renzo Acervo · CV</title>
+<meta name="description" content="Currículum de Renzo Alfonso Acervo Correa, estudiante de Ciencia de Datos en UTEC. Machine learning, deep learning y analítica de datos.">
+<meta property="og:title" content="Renzo Acervo · CV">
+<meta property="og:description" content="Mi currículum dibujado como un mapa de metro, hecho con D3.js.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23172d3b'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%23f7f7f3'%3ERA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#intro" data-go="intro"><span class="bul b0">RA</span><span>Renzo Acervo</span></a>
+  <nav aria-label="Secciones">
+    <a href="#edu" data-go="edu">Educación</a>
+    <a href="#len" data-go="len">Habilidades</a>
+    <a href="#pro" data-go="pro">Proyectos</a>
+    <a href="#fin" data-go="fin">Contacto</a>
+  </nav>
+  <a class="btn small" href="assets/CV_Renzo_Acervo.pdf" download>Descargar PDF</a>
+</header>
+
+<div class="page">
+  <div id="stage">
+    <svg id="graph" role="img" aria-label="Grafo del currículum de Renzo Acervo: cada línea de color es una sección del CV y cada estación, un elemento. El mismo contenido está en el texto de la página."></svg>
+    <div id="sign" aria-hidden="true"></div>
+    <div id="legend" aria-label="Líneas del mapa"></div>
+    <div id="tip" hidden></div>
+  </div>
+
+  <main id="steps">
+    <section class="step on" id="intro" data-step="intro">
+      <p class="kick">Currículum · Lima, Perú</p>
+      <h1>Renzo Alfonso Acervo Correa</h1>
+      <p class="role">Machine Learning · Deep Learning · Data Analytics</p>
+      <p class="lead">Estudiante de Ciencia de Datos en UTEC (egreso 2027). Fuerte en machine learning, deep learning y analítica de datos; programo en Python, C++ y SQL y manejo datasets grandes en la nube. Inglés bilingüe. Busco mis primeras prácticas en data science.</p>
+      <div class="actions">
+        <a class="btn main" href="#fin" data-go="fin">Contacto</a>
+        <a class="btn" href="assets/CV_Renzo_Acervo.pdf" download>Descargar CV en PDF</a>
+      </div>
+      <ul class="lines" aria-label="Líneas del mapa">
+        <li><span class="bul b1">E</span>Educación</li><li><span class="bul b2">L</span>Lenguajes</li><li><span class="bul b3">B</span>Big Data &amp; Cloud</li><li><span class="bul b4">A</span>Analítica &amp; Visualización</li><li><span class="bul b5">M</span>Machine Learning</li><li><span class="bul b6">P</span>Proyectos</li><li><span class="bul b7">+</span>Certificación, extracurricular e idiomas</li>
+      </ul>
+      <p class="scroll">Mi CV está dibujado como un mapa de metro. Baja para recorrerlo línea por línea <span aria-hidden="true">↓</span></p>
+    </section>
+
+    <section class="step" id="edu" data-step="edu">
+      <p class="kick"><span class="bul b1">E</span>Educación</p>
+      <h2>Ciencia de Datos en UTEC</h2>
+      <ul class="items">
+        <li><b>UTEC – Universidad de Ingeniería y Tecnología</b><time>2021 – 2027</time><span>Bachiller en Ciencia de Datos (egreso previsto)</span></li>
+        <li><b>Nord Anglia Education</b><time>2019 – 2020</time><span>Diploma del Bachillerato Internacional (IB)</span></li>
+      </ul>
+    </section>
+
+    <section class="step" id="len" data-step="len">
+      <p class="kick"><span class="bul b2">L</span>Habilidades técnicas · Lenguajes</p>
+      <h2>Python, C++ y SQL</h2>
+      <ul class="tags">
+        <li>Python <small>pandas · NumPy · scikit-learn</small></li><li>C++</li><li>SQL</li>
+      </ul>
+    </section>
+
+    <section class="step" id="big" data-step="big">
+      <p class="kick"><span class="bul b3">B</span>Habilidades técnicas · Big Data &amp; Cloud</p>
+      <h2>Datos grandes, en la nube</h2>
+      <ul class="tags">
+        <li>Google Cloud Platform</li><li>AWS</li><li>Apache Spark</li><li>Dask</li><li>Modin</li>
+      </ul>
+    </section>
+
+    <section class="step" id="ana" data-step="ana">
+      <p class="kick"><span class="bul b4">A</span>Habilidades técnicas · Analítica &amp; Visualización</p>
+      <h2>Del dato al reporte</h2>
+      <ul class="tags">
+        <li>Power BI</li><li>Excel avanzado</li>
+      </ul>
+    </section>
+
+    <section class="step" id="ml" data-step="ml">
+      <p class="kick"><span class="bul b5">M</span>Habilidades técnicas · Machine Learning</p>
+      <h2>El ciclo completo de un modelo</h2>
+      <ul class="tags">
+        <li>Preprocesamiento</li><li>Feature engineering</li><li>Clasificación / regresión</li><li>Validación de modelos</li>
+      </ul>
+    </section>
+
+    <section class="step" id="pro" data-step="pro">
+      <p class="kick"><span class="bul b6">P</span>Proyectos</p>
+      <h2>Donde se juntan las líneas</h2>
+      <ul class="items">
+        <li><b>Data science y machine learning</b><span>Múltiples proyectos a lo largo de la carrera, varios sobre datasets y competencias de Kaggle: limpieza, EDA, modelos de clasificación/regresión y evaluación.</span></li>
+        <li><b>Datos a gran escala en la nube</b><span>Trabajo con Google Cloud Platform y AWS para procesamiento y análisis de datos a gran escala.</span></li>
+      </ul>
+      <p class="note">Las líneas punteadas son los transbordos: muestran qué habilidades usa cada proyecto.</p>
+    </section>
+
+    <section class="step" id="mas" data-step="mas">
+      <p class="kick"><span class="bul b7">+</span>Certificación · Extracurricular · Idiomas</p>
+      <h2>Fuera del plan de estudios</h2>
+      <ul class="items">
+        <li><b>SQL for Data Science — IBM</b><time>2025</time><span>Certificación</span></li>
+        <li><b>CSH – UTEC</b><span>Miembro de la organización estudiantil de ciberseguridad de UTEC</span></li>
+        <li><b>Idiomas</b><span>Español — nativo · Inglés — avanzado / bilingüe</span></li>
+      </ul>
+    </section>
+
+    <section class="step" id="fin" data-step="fin">
+      <p class="kick">Contacto</p>
+      <h2>Busco mis primeras prácticas en data science</h2>
+      <dl class="contact">
+        <dt>Correo</dt><dd><a id="mail" href="mailto:racervo2114@gmail.com">racervo2114@gmail.com</a><button id="copy" type="button">Copiar</button></dd>
+        <dt>Teléfono</dt><dd><a href="tel:+51996992298">+51 996 992 298</a></dd>
+        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/renzo-alfonso-acervo-correa-a08a93358" target="_blank" rel="noopener">linkedin.com/in/renzo-alfonso-acervo-correa-a08a93358</a></dd>
+        <dt>GitHub</dt><dd><a href="https://github.com/RenzoA21" target="_blank" rel="noopener">github.com/RenzoA21</a></dd>
+      </dl>
+      <div class="actions">
+        <a class="btn main" href="mailto:racervo2114@gmail.com">Escribirme</a>
+        <a class="btn" href="assets/CV_Renzo_Acervo.pdf" download>Descargar CV en PDF</a>
+      </div>
+      <p class="note">El mapa queda libre: pasa el cursor por una estación para ver su nombre y con qué se conecta, arrástrala, o haz clic para ir a su sección.</p>
+    </section>
+  </main>
+</div>
+
+<nav id="strip" aria-label="Recorrido"></nav>
+
+<footer>Renzo Alfonso Acervo Correa · Currículum hecho con D3.js</footer>
+
+<script src="lib/d3.min.js"></script>
+<script src="src/cv-data.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
