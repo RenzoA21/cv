@@ -173,7 +173,7 @@
     sign.innerHTML = (st.line ? '<span class="bul b' + st.line + '">' + CV.lines[st.line].bul + '</span>' : '<span class="plain"></span>') + '<span></span>';
     sign.lastChild.textContent = st.sign;
     d3.selectAll('#legend button, #strip button').attr('aria-current', function () { return this.dataset.step === cur ? 'true' : null; });
-    var navOf = {intro: null, edu: 'edu', len: 'len', big: 'len', ana: 'len', ml: 'len', pro: 'pro', mas: null, fin: 'fin'}[cur];
+    var navOf = {intro: null, edu: 'edu', len: 'len', big: 'len', ana: 'len', ml: 'len', mas: null, fin: 'fin'}[cur];
     d3.selectAll('.top nav a').attr('aria-current', function () { return this.dataset.go === navOf ? 'true' : null; });
     draw();
   }

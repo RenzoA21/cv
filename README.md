@@ -1,9 +1,9 @@
 # CV de Renzo Acervo en D3.js
 
 Mi currículum como una visualización: un grafo dibujado como mapa de metro que se recorre con scroll.
-Cada línea de color es una sección del CV (educación, lenguajes, big data, machine learning, proyectos…)
+Cada línea de color es una sección del CV (educación, lenguajes, big data, machine learning…)
 y cada estación es un elemento. Las líneas punteadas son los "transbordos": conexiones entre secciones,
-por ejemplo qué habilidades usa cada proyecto.
+por ejemplo la certificación de SQL con el lenguaje SQL.
 
 ## Cómo verlo
 

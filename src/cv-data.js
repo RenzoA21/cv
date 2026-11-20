@@ -34,16 +34,11 @@ window.CV = {
         {id: 'dask', label: 'Dask'},
         {id: 'modin', label: 'Modin'},
         {id: 'aws', label: 'AWS'},
-        {id: 'gcp', label: 'Google Cloud Platform'}]}]},
-    {id: 'pro', label: 'Proyectos', line: 6, hub: true, children: [
-      {id: 'nube', label: 'Datos a gran escala en la nube', info: 'Procesamiento y análisis de datos a gran escala con Google Cloud Platform y AWS'},
-      {id: 'kag', label: 'Data science y ML (Kaggle)', info: 'Limpieza, EDA, modelos de clasificación/regresión y evaluación sobre datasets y competencias de Kaggle'}]}
+        {id: 'gcp', label: 'Google Cloud Platform'}]}]}
   ]},
 
   // Conexiones entre secciones (líneas punteadas).
   transfers: [
-    ['kag', 'prep'], ['kag', 'clf'], ['kag', 'val'],
-    ['nube', 'gcp'], ['nube', 'aws'],
     ['ibm', 'sql'], ['csh', 'utec'], ['sklearn', 'ml']
   ],
 
@@ -54,7 +49,6 @@ window.CV = {
     3: {name: 'Big Data & Cloud', bul: 'B', step: 'big'},
     4: {name: 'Analítica & Visualización', bul: 'A', step: 'ana'},
     5: {name: 'Machine Learning', bul: 'M', step: 'ml'},
-    6: {name: 'Proyectos', bul: 'P', step: 'pro'},
     7: {name: 'Certificación, extracurricular e idiomas', bul: '+', step: 'mas'}
   },
 
@@ -66,7 +60,6 @@ window.CV = {
     {id: 'big', line: 3, sign: 'Big Data & Cloud', focus: ['big', 'gcp', 'aws', 'spark', 'dask', 'modin'], hubs: ['big']},
     {id: 'ana', line: 4, sign: 'Analítica & Visualización', focus: ['ana', 'pbi', 'xls'], hubs: ['ana']},
     {id: 'ml', line: 5, sign: 'Machine Learning', focus: ['ml', 'prep', 'fe', 'clf', 'val'], hubs: ['ml']},
-    {id: 'pro', line: 6, sign: 'Proyectos', focus: ['pro', 'kag', 'nube', 'prep', 'clf', 'val', 'gcp', 'aws'], hubs: ['pro']},
     {id: 'mas', line: 7, sign: 'Certificación · Extracurricular · Idiomas', focus: ['cert', 'ibm', 'sql', 'ext', 'csh', 'utec', 'idi', 'es', 'en'], hubs: ['cert', 'ext', 'idi']},
     {id: 'fin', sign: 'Explora el mapa', focus: null}
   ]
