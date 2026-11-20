@@ -207,11 +207,9 @@
 
   // ---------- 7. Interacción con los nodos ----------
   function showTip(d) {
-    tip.innerHTML = '<b></b><span></span><i></i>';
+    tip.innerHTML = '<b></b><span></span>';
     tip.children[0].textContent = d.label;
     tip.children[1].textContent = d.info || (d.hub ? 'Sección del CV' : (d.line ? CV.lines[d.line].name : ''));
-    var n = Object.keys(nbr[d.id]).length - 1;
-    tip.children[2].textContent = n + (n === 1 ? ' conexión' : ' conexiones');
     tip.hidden = false;
     var x = sx(d) + 18, y = sy(d) + 18, w = tip.offsetWidth, h = tip.offsetHeight;
     if (x + w > W - 8) x = sx(d) - w - 18; if (x < 8) x = 8;

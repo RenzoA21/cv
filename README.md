@@ -2,8 +2,7 @@
 
 Mi currículum como una visualización: un grafo dibujado como mapa de metro que se recorre con scroll.
 Cada línea de color es una sección del CV (educación, lenguajes, big data, machine learning…)
-y cada estación es un elemento. Las líneas punteadas son los "transbordos": conexiones entre secciones,
-por ejemplo la certificación de SQL con el lenguaje SQL.
+y cada estación es un elemento.
 
 ## Cómo verlo
 
@@ -21,7 +20,7 @@ y abrir `http://localhost:8000/`.
 
 ```
 index.html          Página y texto del CV
-src/cv-data.js      Datos del grafo: nodos, transbordos, líneas y pasos del recorrido
+src/cv-data.js      Datos del grafo: nodos, líneas y pasos del recorrido
 src/main.js         Visualización en D3: layout, cámara, scroll e interacción
 src/styles.css      Estilos (modo claro y oscuro, versión para celular e impresión)
 lib/d3.min.js       D3 v7.9.0 (licencia en lib/LICENSE.d3)
@@ -34,13 +33,13 @@ assets/             PDF del CV para descargar
   afina con `d3.forceSimulation` para que no se encimen los nodos.
 - **Scrollytelling:** el grafo queda fijo y, al bajar, la cámara viaja al grupo de nodos de cada sección
   con `d3.interpolateZoom`. Lo demás se atenúa.
-- **Interacción:** pasar el cursor por una estación muestra su detalle y resalta sus conexiones; se puede
+- **Interacción:** pasar el cursor por una estación muestra su detalle y resalta su rama; se puede
   arrastrar; un clic lleva a su sección. La leyenda y las paradas del borde derecho también navegan.
 - **Etiquetas:** cada etiqueta prueba cuatro posiciones y se queda con la que menos choca.
 
 ## Cómo actualizarlo
 
-1. Editar `src/cv-data.js`: agregar el nodo en `tree` y, si se conecta con otra sección, un par en `transfers`.
+1. Editar `src/cv-data.js`: agregar el nodo en `tree`.
 2. Agregar el mismo contenido en el texto de `index.html`.
 3. Si es una sección nueva, sumarla a `lines` y `steps`, y su color `--l8` en `src/styles.css`.
 

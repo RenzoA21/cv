@@ -1,5 +1,5 @@
 // Contenido del CV. Para actualizarlo se edita solo este archivo (y el texto de index.html).
-// El grafo es un árbol (secciones y elementos) más los "transbordos": conexiones entre secciones.
+// El grafo es un árbol: yo en el centro, las secciones y sus elementos.
 window.CV = {
   // line: número de línea (color). hub: nodo de sección. info: texto que aparece al pasar el cursor.
   tree: {id: 'root', label: 'Renzo Acervo', info: 'Estudiante de Ciencia de Datos · UTEC · Lima, Perú', children: [
@@ -37,10 +37,8 @@ window.CV = {
         {id: 'gcp', label: 'Google Cloud Platform'}]}]}
   ]},
 
-  // Conexiones entre secciones (líneas punteadas).
-  transfers: [
-    ['ibm', 'sql'], ['csh', 'utec'], ['sklearn', 'ml']
-  ],
+  // Conexiones extra entre secciones. Vacío: el grafo es solo el árbol del CV.
+  transfers: [],
 
   // Líneas del mapa: nombre, letra de la bala y paso del recorrido al que llevan.
   lines: {
@@ -60,7 +58,7 @@ window.CV = {
     {id: 'big', line: 3, sign: 'Big Data & Cloud', focus: ['big', 'gcp', 'aws', 'spark', 'dask', 'modin'], hubs: ['big']},
     {id: 'ana', line: 4, sign: 'Analítica & Visualización', focus: ['ana', 'pbi', 'xls'], hubs: ['ana']},
     {id: 'ml', line: 5, sign: 'Machine Learning', focus: ['ml', 'prep', 'fe', 'clf', 'val'], hubs: ['ml']},
-    {id: 'mas', line: 7, sign: 'Certificación · Extracurricular · Idiomas', focus: ['cert', 'ibm', 'sql', 'ext', 'csh', 'utec', 'idi', 'es', 'en'], hubs: ['cert', 'ext', 'idi']},
+    {id: 'mas', line: 7, sign: 'Certificación · Extracurricular · Idiomas', focus: ['cert', 'ibm', 'ext', 'csh', 'idi', 'es', 'en'], hubs: ['cert', 'ext', 'idi']},
     {id: 'fin', sign: 'Explora el mapa', focus: null}
   ]
 };
