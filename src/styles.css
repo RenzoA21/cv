@@ -1,20 +1,12 @@
 /* CV de Renzo Acervo. El CV como mapa de metro: grafo fijo a la izquierda (D3) y texto a la derecha.
    En pantallas angostas el grafo queda fijo arriba. Los colores de las líneas salen de --l1..--l7. */
 :root{
-  --bg:#f7f7f3; --surface:#ffffff; --ink:#172d3b; --soft:#40566a; --muted:#6c7d87; --rule:#d6dbd5; --dot:#dfe3dd; --transfer:#8b98a0;
+  --bg:#ffffff; --surface:#ffffff; --ink:#172d3b; --soft:#40566a; --muted:#6c7d87; --rule:#dcdfe1; --dot:#e6e8ea; --transfer:#8b98a0;
   --l1:#2a78d6; --l2:#eb6834; --l3:#1baf7a; --l4:#eda100; --l5:#e87ba4; --l6:#008300; --l7:#6250d6;
   --on1:#ffffff; --on2:#1a1205; --on3:#06251a; --on4:#241a00; --on5:#2a0b18; --on6:#ffffff; --on7:#ffffff;
   --display:"Space Grotesk",Inter,system-ui,sans-serif; --body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
   --top:58px;
   color-scheme:light;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --bg:#111a20; --surface:#1a262e; --ink:#eef2f0; --soft:#c2ced3; --muted:#94a4ac; --rule:#2c3b45; --dot:#22313a; --transfer:#7d8d96;
-    --l1:#3987e5; --l2:#d95926; --l3:#199e70; --l4:#c98500; --l5:#d55181; --l6:#0ca30c; --l7:#9085e9;
-    --on1:#ffffff; --on2:#ffffff; --on3:#ffffff; --on4:#1a1200; --on5:#ffffff; --on6:#ffffff; --on7:#14102e;
-    color-scheme:dark;
-  }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
